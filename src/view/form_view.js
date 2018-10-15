@@ -3,7 +3,7 @@
 // handle the user's input
 const PubSub = require('../helpers/pub_sub.js')
 const FormView = function(){
-// empty constructor
+
 };
 
 FormView.prototype.bindEvents = function(){
@@ -17,7 +17,7 @@ const inputtedNumber = event.target.number.value;
 console.log('inputted number', inputtedNumber);
 
 PubSub.publish('FormView:number-submitted', inputtedNumber)
-// The name of the channel we want to publish on - 'ormView:number-submitted'
+// The name of the channel we want to publish on - 'formView:number-submitted'
 // The data we want to publish - inputtedNumber
 
 })
